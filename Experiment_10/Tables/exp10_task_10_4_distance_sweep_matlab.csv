@@ -1,0 +1,6 @@
+Alpha_Factor,Cutoff_Distance_px,Max_Distance_px,FG_Marker_Count,Watershed_Regions,Clinical_Status
+0.15,3.29,21.93,47,47,Over-Segmented (Fragmented Basins)
+0.25,5.48,21.93,8,8,Acceptable Separation
+0.35,7.68,21.93,6,6,OPTIMAL (6 Clean Anatomical Structures)
+0.55,12.06,21.93,3,3,Acceptable Separation
+0.75,16.45,21.93,1,1,Under-Segmented (Marker Shrinkage / Missing Basins)

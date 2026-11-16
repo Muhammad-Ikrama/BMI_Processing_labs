@@ -1,0 +1,11 @@
+Tolerance_T,Predicate_Rule,Area_px,DSC,Jaccard_IoU,Reference_Intensity,Clinical_Status
+15,Fixed Seed,783,0.5843,0.4128,200.0,Under-Grown
+15,Running Mean,1123,0.7437,0.592,211.93,Contained
+25,Fixed Seed,1701,0.9455,0.8967,200.0,Acceptable
+25,Running Mean,1664,0.9346,0.8772,213.02,Contained
+38,Fixed Seed,1779,0.9641,0.9307,200.0,Optimal
+38,Running Mean,1725,0.947,0.8993,215.09,Contained
+50,Fixed Seed,1848,0.9463,0.8981,200.0,Acceptable
+50,Running Mean,99897,0.0005,0.0002,103.84,Catastrophic Leakage!
+70,Fixed Seed,2013,0.9064,0.8288,200.0,Acceptable
+70,Running Mean,130679,0.0014,0.0007,100.53,Catastrophic Leakage!

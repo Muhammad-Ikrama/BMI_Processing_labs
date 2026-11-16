@@ -1,0 +1,4 @@
+Anatomical_Structure,Area_px,Image_Percentage,Symmetry_Ratio,Segmentation_Method
+Right Lung (Patient Right),11748,5.88,1.0,Marker-Controlled Watershed
+Left Lung (Patient Left),42591,21.3,3.625,Marker-Controlled Watershed
+Bilateral Total Lung Field,54339,27.18,3.625,Combined Segmented Lobes

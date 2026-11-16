@@ -1,0 +1,6 @@
+Seed_Location,Seed_Type,Coord_X,Coord_Y,Seed_Intensity,Area_px,Ground_Truth_px,Area_Ratio,DSC,Jaccard_IoU,Status
+Centroid,Center Core,327,242,199,1782,1897,0.939377965208223,0.963305245990758,0.929208180388044,Optimal Capture
+Interior Point 1,Interior Paracentral,320,238,209,1717,1897,0.905113336847654,0.950193691200885,0.905113336847654,Optimal Capture
+Interior Point 2,Interior Paracentral,332,248,201,1772,1897,0.934106483921982,0.965930771327337,0.934106483921982,Optimal Capture
+Peripheral Rim 1,Marginal Boundary Rim,305,228,127,115649,1897,60.9641539272536,0.0322767257073826,0.0164030817387094,Rim Degradation / Under-grown
+Peripheral Rim 2,Marginal Boundary Rim,345,255,132,111890,1897,58.9826041117554,0.0333430005185127,0.0169541513986951,Rim Degradation / Under-grown
