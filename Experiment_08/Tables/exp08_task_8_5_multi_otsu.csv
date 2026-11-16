@@ -1,0 +1,4 @@
+Class_ID,Tissue_Name,Intensity_Range,Pixel_Count,Area_Pct
+0,Background Air,0 to 25,149089,56.87
+1,Brain Parenchyma,26 to 84,96224,36.71
+2,Ventricles & CSF,>84,16831,6.42

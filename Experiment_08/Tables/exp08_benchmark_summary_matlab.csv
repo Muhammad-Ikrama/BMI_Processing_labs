@@ -1,0 +1,6 @@
+Method,Cutoff_T,Dice_DSC,Jaccard_IoU,FG_Area_Pct
+Fixed Global (T=115),115,0.2976,0.1748,3.66
+Isodata Global (T=71),70.9,0.4646,0.3026,8.42
+Otsu Global (T*=71),71,0.4603,0.2989,8.27
+Adaptive Mean (35x35),32.5,0.6957,0.5334,30.25
+Adaptive Gaussian (35x35),32.5,0.6753,0.5098,26.28

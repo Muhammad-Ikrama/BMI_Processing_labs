@@ -1,0 +1,2 @@
+Modality,Image_Size,Custom_T_star,MATLAB_T_star,Exact_Match,Between_Class_Var,Total_Var,Separability_eta,Bone_Area_Pct
+Head CT,512x512,118,118,1,2132.01,3343.86,0.6376,66.51

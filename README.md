@@ -25,7 +25,13 @@ This repository contains the complete laboratory implementations, dual-language 
 | **05** | Edge Detection in Medical Images Using Sobel, Prewitt, and Canny Operators | Passed | Passed | 9/9 Passed | 11 Pages | [DOCX](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_05/Report/Experiment_05_Report.docx) \| [PDF](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_05/Report/Experiment_05_Report.pdf) |
 | **06** | Frequency-Domain Filtering of Medical Images Using the 2-D Fourier Transform | Passed | Passed | 9/9 Passed | 10 Pages | [DOCX](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_06/Report/Experiment_06_Report.docx) \| [PDF](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_06/Report/Experiment_06_Report.pdf) |
 | **07** | Image Sharpening of Medical Images Using High-Boost Filtering & Unsharp Masking | Passed | Passed | 9/9 Passed | 11 Pages | [DOCX](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_07/Report/Experiment_07_Report.docx) \| [PDF](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_07/Report/Experiment_07_Report.pdf) |
-| **08** | Global and Adaptive Thresholding Techniques (Otsu's Method) | *Pending* | *Pending* | *Pending* | *Pending* | *In Queue* |
+| **08** | Global and Adaptive Thresholding Techniques (Including Otsu's Method) | Passed | Passed | 9/9 Passed | 12 Pages | [DOCX](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_08/Report/Experiment_08_Report.docx) \| [PDF](file:///d:/BME/7th%20sem/biomedical%20Image%20Processing/labs/Biomedical_Image_Processing_Lab/Experiment_08/Report/Experiment_08_Report.pdf) |
+| **09** | Morphological Image Processing for Medical Image Refinement | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Next In Line* |
+| **10** | Region Growing and Watershed Segmentation of Anatomical Structures | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Upcoming* |
+| **11** | Active Contour (Snake) Segmentation of Anatomical Boundaries | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Upcoming* |
+| **12** | Rigid Registration of Multi-Modal Medical Images (PET-CT / PET-MRI) | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Upcoming* |
+| **13** | Gray Level Co-occurrence Matrix (GLCM) Texture Feature Extraction | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Upcoming* |
+| **14** | Lossless and Lossy Image Compression Quality Analysis | *In Queue* | *In Queue* | *In Queue* | *In Queue* | *Upcoming* |
 
 ---
 
