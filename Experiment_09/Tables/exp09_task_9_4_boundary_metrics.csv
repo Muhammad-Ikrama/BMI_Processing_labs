@@ -1,0 +1,4 @@
+Formulation,Perimeter_Pixels,Thickness_Pixels,Location
+Internal Boundary: A - (A ⊖ B),728,1,Inside true boundary
+External Boundary: (A ⊕ B) - A,775,1,Outside true boundary
+Symmetrical Gradient: (A ⊕ B) - (A ⊖ B),1503,2,Straddles true boundary

@@ -1,0 +1,4 @@
+SE_Geometry,SE_Shape,Active_Pixels_KxK,Opened_Area_Px,Closed_Area_Px,Boundary_Perimeter_Px
+Square (8-connected Box),Square,49,169020,181434,43599
+Cross (4-connected Diamond),Cross,25,170547,179326,33973
+Disk (Isotropic Ellipse),Disk,29,170475,179438,35807

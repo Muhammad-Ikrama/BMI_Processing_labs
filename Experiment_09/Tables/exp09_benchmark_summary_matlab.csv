@@ -1,0 +1,7 @@
+Operation,Dice_DSC,Jaccard_IoU,CC_Count,Hole_Pixels,Area_Pixels
+Corrupted Mask,0.2838,0.1654,832,21,5225
+Erosion (5x5 Disk),0.5418,0.3715,17,0,334
+Dilation (5x5 Disk),0.077,0.04,700,39,22454
+Opening (5x5 Disk),0.9469,0.8991,7,0,814
+Closing (5x5 Disk),0.2853,0.1664,792,0,5376
+Open + Close (5x5),0.9542,0.9124,6,0,826

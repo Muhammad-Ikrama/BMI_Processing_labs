@@ -1,0 +1,5 @@
+Disk_Size_K,Radius_r,Dice_DSC,Jaccard_IoU,CC_Count,Hole_Pixels,Area_Pixels,Area_Error_Pct
+3x3,1,0.2784,0.1617,819,0,5251,484.09
+5x5,2,0.9542,0.9124,6,0,826,8.12
+9x9,4,0.5258,0.3567,1,0,322,64.18
+15x15,7,0.3086,0.1824,1,0,164,81.76

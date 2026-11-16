@@ -1,0 +1,4 @@
+Pipeline_Strategy,Tag,Dice_DSC,Jaccard_IoU,CC_Count,Hole_Pixels,Area_Pixels
+Noisy Input (High Salt),Input,0.1251,0.0667,1735,29,10459
+Pipeline A: Open-then-Close,PipeA,0.963,0.9286,6,0,663
+Pipeline B: Close-then-Open,PipeB,0.8349,0.7166,14,0,946

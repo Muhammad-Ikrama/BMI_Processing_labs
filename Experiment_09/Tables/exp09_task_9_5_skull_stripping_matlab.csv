@@ -1,0 +1,2 @@
+Modality,Image_Size,Total_Pixels,Total_Head_Area_Px,Bone_Ring_Area_Px,Extracted_Brain_Area_Px,Brain_Scan_Volume_Pct,Brain_to_Head_Ratio_Pct
+Head CT,512x512,262144,174361,149687,51373,19.6,29.46
