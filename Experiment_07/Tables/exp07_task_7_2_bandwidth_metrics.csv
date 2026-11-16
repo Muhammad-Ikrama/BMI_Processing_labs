@@ -1,0 +1,4 @@
+Sigma_Pixels,Equivalent_Window,Cutoff_Freq_Cycles_Px,Mask_Std_Dev,Mask_Dynamic_Range,Sharpened_Mean_Grad,Grad_Boost_Pct,Bandwidth_Interpretation
+0.8,5x5,0.1989,14.58,296.05,13.27,47.71,"Microscopic Edge Mask (Fine textures, minimal halo risk)"
+1.5,7x7,0.1061,21.35,338.38,15.83,76.19,Balanced Diagnostic Mask (Cortical borders & trabeculae)
+3.0,13x13,0.0531,26.44,343.16,17.23,91.74,"Macroscopic Boundary Mask (Thick structures, wide halos)"

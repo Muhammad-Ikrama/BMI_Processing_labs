@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MATLAB autosave and crash dump files
+*.asv
+*.m~
+matlab_crash_dump.*
+
+# Microsoft Office temporary files
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local Environment and Logs
+*.log
+.vscode/
+.idea/
+matlab_prefs/

@@ -1,0 +1,31 @@
+================================================================================
+EXPERIMENT NO. 4: COMPREHENSIVE TEST AND VALIDATION AUDIT REPORT
+Noise Modeling and Removal Using Median and Adaptive Filtering Techniques
+Department of Biomedical Engineering - Riphah International University
+================================================================================
+
+[PASS] T01 | Input Integrity      | MRI.jpg & CT.jpg Exist, (512, 512), uint8
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T02 | Noise Modeling       | Gaussian Residual Zero-Mean, S&P Bipolar Spikes
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T03 | Linear Smear Failure | Mean 5x5 Smears Impulses; Median Vastly Superior
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T04 | Median Sweep         | Window 3x3 Maximizes SSIM; 7x7 Truncates Detail
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T05 | AMF Stress Test      | AMF Beats Standard Median by >10 dB at 40% Noise
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T06 | Table Export         | task_4_5_restoration_benchmark_summary.csv Valid
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+[PASS] T07 | Figure Deliverables  | All 12 Figures Generated (> 50 KB)
+         Verified across Python 3.14 and MATLAB R2026a execution pipelines.
+
+================================================================================
+FINAL TEST SUMMARY: 7/7 TEST SUITES PASSED (100% SUCCESS RATE)
+Failures: 0, Errors: 0
+================================================================================

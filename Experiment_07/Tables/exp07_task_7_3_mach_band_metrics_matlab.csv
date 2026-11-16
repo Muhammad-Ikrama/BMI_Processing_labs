@@ -1,0 +1,4 @@
+Condition,Max_Edge_Slope,Overshoot_Peak,Undershoot_Trough,Mach_Band_Halo_Width_Px,Halo_Compliance
+Original Scan,16,0,10.1904761904762,0,Pass (<= 2.0 px)
+Unsharp Masking (k=1.0),24.3761225230979,0,16.1448633995648,0,Pass (<= 2.0 px)
+Over-Boosted (k=3.0),45.1273131867817,0,28.053637817742,0,Pass (<= 2.0 px)

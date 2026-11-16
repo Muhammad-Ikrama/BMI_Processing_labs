@@ -1,0 +1,4 @@
+Operator,Edge_Pixels,Edge_Density_pct,Pratts_FOM,Mean_Skeleton_Width_px,Thinning_Efficiency_pct
+Prewitt Operator,44579,17.01,0.7101,4.2,0.0
+Sobel Operator,45116,17.21,0.7032,3.8,0.0
+Canny Edge Detector,17697,6.75,0.7825,1.0,60.8

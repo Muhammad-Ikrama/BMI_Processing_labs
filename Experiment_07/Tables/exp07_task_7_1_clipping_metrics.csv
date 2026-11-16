@@ -1,0 +1,5 @@
+Boost_Factor_k,Mean_Gradient,Gradient_Boost_Pct,Clipped_0_Pct,Saturated_255_Pct,Total_Clipping_Pct,Shannon_Entropy_Bits,Diagnostic_Status,Clinical_Verdict
+0.5,12.33,37.23,3.283,6.608,9.891,6.176,Sub-optimal (Mild Edge Boost),Acceptable (Low Contrast)
+1.0,15.83,76.19,4.009,8.049,12.059,6.123,OPTIMAL CLINICAL STANDARD,APPROVED (Good to Go)
+1.8,21.54,139.73,4.973,9.074,14.047,6.056,High-Boost (Moderate Noise),Acceptable (Dense Bones)
+3.0,30.23,236.5,5.808,10.011,15.819,6.0,Severe Clipping & Noise Halos,CONTRAINDICATED

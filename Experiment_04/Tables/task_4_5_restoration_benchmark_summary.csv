@@ -1,0 +1,6 @@
+Method,PSNR_dB,SSIM,EPI,Background_Noise_Var,Status
+Ground Truth Scan,999.0,1.0,1.0,0.09,Reference
+Mixed Noisy Baseline,13.95,0.1393,0.0336,2126.91,Clinical Failure
+Linear Mean 5x5,23.91,0.4335,0.111,101.51,Clinical Failure
+Standard Median 3x3,33.68,0.8288,0.3785,7.67,Good to Go
+Adaptive Median AMF,30.91,0.6585,0.2454,17.9,Good to Go

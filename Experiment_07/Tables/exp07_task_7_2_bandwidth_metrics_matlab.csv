@@ -1,0 +1,4 @@
+Sigma_Pixels,Equivalent_Window,Cutoff_Freq_Cycles_Px,Mask_Std_Dev,Mask_Dynamic_Range,Sharpened_Mean_Grad,Grad_Boost_Pct,Bandwidth_Interpretation
+0.8,5x5,0.198943678864869,14.5645870157736,296.095991076712,13.263875537465,47.6352665348244,"Microscopic Edge Mask (Fine textures)"
+1.5,7x7,0.106103295394597,21.2004457587644,340.576974676705,15.784712922736,75.6937701157897,"Balanced Diagnostic Mask (Cortical borders & trabeculae)"
+3,13x13,0.0530516476972984,26.1237370434778,340.983903314106,17.1805424877251,91.2302299749226,"Macroscopic Boundary Mask (Thick structures, wide halos)"

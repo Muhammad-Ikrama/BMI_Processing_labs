@@ -1,0 +1,5 @@
+Filter_Name,Filter_Class,Cutoff_D0,Order_n,Energy_Retention_Pct,PSNR_dB,SSIM,Gibbs_Ringing,Clinical_Verdict
+Ideal Low-Pass (ILPF),Low-Pass,40,Infinite (Step),93.85,27.51,0.7664,Severe (Prominent concentric halos),Contraindicated (Mimics hematomas / dissection)
+Butterworth LP (n=2),Low-Pass,40,2,90.27,28.92,0.8612,Zero (Smooth maximally-flat rolloff),GOLD STANDARD (Optimal parenchymal denoising)
+Gaussian LP (GLPF),Low-Pass,40,Gaussian,89.29,30.1,0.896,"Zero (100% ripple-free, zero secondary lobes)",EXCELLENT (Ideal for pre-segmentation smoothing)
+Gaussian High-Pass (GHPF),High-Pass,50,Gaussian,2.05,16.91,0.389,"Zero (DC removed, boundary isolation)",DIAGNOSTIC (Superior micro-structure & vessel isolation)

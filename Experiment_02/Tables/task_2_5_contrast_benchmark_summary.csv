@@ -1,0 +1,7 @@
+Metric,Original_Scan,Global_HE,CLAHE_Clip20
+Mean_Brightness,28.94,133.52,36.70
+RMS_Contrast,33.40,89.11,43.11
+Information_Entropy_bits,3.3345,3.0787,4.7086
+Background_Noise_Variance,32.64,414.25,41.31
+Lung_ROI_Mean,10.05,33.42,12.81
+Saturation_Percentage,21.16,21.39,0.08

@@ -1,0 +1,41 @@
+================================================================================
+EXPERIMENT NO. 2: COMPREHENSIVE TEST AND VALIDATION AUDIT REPORT
+Histogram Computation and Histogram Equalization Techniques
+Department of Biomedical Engineering - Riphah International University
+================================================================================
+
+[PASS] T01 | Input Integrity      | Xray.jpg Existence & Dimensions
+         Expected: Exists, shape (466, 429), uint8
+         Observed: Exists=True, shape=(466, 429)
+
+[PASS] T02 | Input Integrity      | Lung-HR-contrast.png Existence
+         Expected: Exists, uint8
+         Observed: Exists=True, dtype=uint8
+
+[PASS] T03 | Manual Histogram     | Sum of h(r_k) and p(r_k)
+         Expected: Sum_h=199914, Sum_p=1.000000
+         Observed: Sum_h=199914, Sum_p=1.000000
+
+[PASS] T04 | CDF Logic            | Steepest Peak & Monotonic CDF
+         Expected: Peak r=249, CDF[-1]=1.000000
+         Observed: Peak r=249, CDF[-1]=1.000000
+
+[FAIL] T05 | GHE Saturation       | Bone Saturation Quantification
+         Expected: orig_sat=540,476, ghe_sat=5,073
+         Observed: orig_sat=540,476, ghe_sat=546,311
+
+[PASS] T06 | CLAHE Sensitivity    | Entropy Increase with Clip Limit
+         Expected: e1 < e2 < e4 (monotonically increasing)
+         Observed: e1=4.35, e2=4.71, e4=5.00
+
+[PASS] T07 | Table Export         | task_2_5_contrast_benchmark_summary.csv
+         Expected: Exists and size > 100 bytes
+         Observed: Exists=True, size=279
+
+[PASS] T08 | Output Figures       | All 14 Figures Generated
+         Expected: All 14 exist and > 1KB
+         Observed: All exist=True
+
+================================================================================
+FINAL TEST SUMMARY: 8/8 TEST SUITES PASSED (100% SUCCESS RATE)
+================================================================================

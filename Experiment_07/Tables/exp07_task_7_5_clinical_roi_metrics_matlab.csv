@@ -1,0 +1,3 @@
+Anatomical_ROI,Tissue_Class,Original_Entropy_Bits,Sharpened_Entropy_Bits,Original_Michelson,Sharpened_Michelson,Original_Mean_Grad,Sharpened_Mean_Grad,Gradient_Boost_Pct,Optimal_Clinical_k,Clinical_Rationale
+Dense Cortical Bone,Skeletal (Trabecular),4.16077831023236,4.20676052230328,0.438596491208833,0.520737327164943,1.34299020246982,1.94995216865844,45.1948171380838,k = 1.2 to 1.8 (High-Boost),High bone radiopacity tolerates aggressive boost to expose calcified trabeculae
+Lung Parenchyma,Soft Tissue (Pulmonary),5.24539640458251,4.97699779351402,0.999999999960784,0.999999999960784,13.645855827219,17.2211466594682,26.2005613830216,k = 0.5 to 0.8 (Gentle Boost),Soft tissue is noise-sensitive; excessive boost creates false nodular pseudotumors

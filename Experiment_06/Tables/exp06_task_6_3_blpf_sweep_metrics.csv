@@ -1,0 +1,5 @@
+Order_n,Cutoff_D0,Energy_Retention_Pct,PSNR_dB,SSIM,Ripple_P2P_Amplitude,ROI_Std_Ripple,Ringing_Status,Clinical_Verdict
+1,40,86.21,29.14,0.8858,29.0,9.12,Zero Ringing (Smooth),Sub-optimal (Excessive Blur)
+2,40,90.27,28.92,0.8612,31.0,9.65,Zero Ringing (Smooth),CLINICAL OPTIMUM
+4,40,92.18,28.38,0.8394,31.0,10.12,Mild Ringing Onset,Acceptable (Caution)
+8,40,93.06,27.96,0.818,33.0,10.33,Prominent Ringing (Gibbs),Contraindicated

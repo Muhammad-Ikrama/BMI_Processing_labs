@@ -1,0 +1,11 @@
+# Python Dependencies for Experiment 07
+# Image Sharpening of Medical Images Using High-Boost Filtering and Unsharp Masking
+numpy>=1.24.0
+opencv-python>=4.8.0
+scipy>=1.11.0
+scikit-image>=0.22.0
+matplotlib>=3.8.0
+pillow>=10.0.0
+python-docx>=1.1.0
+pydicom>=2.4.0
+pandas>=2.0.0

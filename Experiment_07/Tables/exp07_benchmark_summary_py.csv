@@ -1,0 +1,6 @@
+Sharpening_Method,Boost_k,Mean_Gradient,Gradient_Boost_Pct,Total_Clipping_Pct,Mach_Band_Halo_Width,Entropy_Bits,Noise_Amplification,Clinical_Verdict
+Unfiltered Baseline,0.0,8.98,0.0,0.0,0.0,6.068,0.0%,Reference Input (Unprocessed)
+Mild De-Emphasis,0.5,12.33,37.23,0.012,0.8,7.425,+6.4%,RECOMMENDED for Soft Tissue & Pulmonary Nodules
+Standard Unsharp Masking,1.0,15.83,76.19,0.087,1.2,7.448,+14.2%,GOLD STANDARD for Routine Skeletal & Chest Exams
+High-Boost Filtering,1.8,21.54,139.73,0.458,1.8,7.43,+24.8%,INDICATED for Low-Contrast Bariatric Spine / Pelvis
+Over-Boosted Hazard,3.0,30.23,236.5,1.842,3.5,7.291,+48.6%,"CONTRAINDICATED (Severe Halos, False Lines, Noise)"

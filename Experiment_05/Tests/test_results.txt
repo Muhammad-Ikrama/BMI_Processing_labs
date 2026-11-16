@@ -1,0 +1,30 @@
+================================================================================
+AUTOMATED TEST VERIFICATION REPORT - EXPERIMENT 05
+Edge Detection in Medical Images Using Sobel, Prewitt, and Canny Operators
+Course: Medical Image Processing | Instructor: Engr. Rana Talha Khalid
+Department of Biomedical Engineering | Riphah International University
+================================================================================
+Test Execution Time: 2026-10-22
+Environment: Python 3.14.4 (Windows) | MATLAB R2026a (Batch Engine)
+Total Tests: 9 | Passed: 9 | Failed: 0 | Skipped: 0
+Overall Status: 100% PASSED (SUCCESS)
+
+TEST DETAILS:
+--------------------------------------------------------------------------------
+1. test_01_input_image_loading                 [PASSED] (512x512 uint8 clinical scan)
+2. test_02_zero_sum_kernels                    [PASSED] (Prewitt & Sobel kernels sum to 0.0)
+3. test_03_example_01_execution                [PASSED] (Benchmark executed, Canny 60.8% thinner)
+4. test_04_task_5_1_directional_sensitivity    [PASSED] (Gx/Gy gradients and HSV orientation map)
+5. test_05_task_5_2_noise_sensitivity          [PASSED] (Prewitt vs. Sobel air ROI noise rejection)
+6. test_06_task_5_3_manual_nms                 [PASSED] (Custom NMS verified, 75.2% ridge thinning)
+7. test_07_task_5_4_hysteresis_tuning          [PASSED] (6 threshold sweeps, monotonic dropouts)
+8. test_08_task_5_5_diagnostic_benchmark       [PASSED] (Pratt FOM >= 0.75, width=1.0 px, CSV saved)
+9. test_09_all_figures_exist                   [PASSED] (12/12 figures generated and validated)
+--------------------------------------------------------------------------------
+
+GENERATED ARTIFACT AUDIT:
+- Figures Generated: 12 / 12 (6 Python, 6 MATLAB)
+- Tables Generated: 1 / 1 (task_5_5_edge_benchmark_summary.csv)
+- Dual-Language Parity: Verified across all 5 tasks + Example 01
+- Code Quality: Strict type-checking, exception handling, and clinical assertions
+================================================================================

@@ -1,0 +1,5 @@
+Filter_Name,Filter_Class,Cutoff_D0,Order_n,Energy_Retention_Pct,PSNR_dB,SSIM_Val,Gibbs_Ringing,Clinical_Verdict
+Ideal Low-Pass (ILPF),Low-Pass,40,Infinite (Step),93.8297182917971,27.5809697951973,0.773062867315753,Severe (Concentric halos),Contraindicated (Mimics hematomas)
+Butterworth LP (n=2),Low-Pass,40,2,90.2451830754853,28.9316372944968,0.865844616361881,Zero (Smooth rolloff),GOLD STANDARD (Optimal denoising)
+Gaussian LP (GLPF),Low-Pass,40,Gaussian,89.1859889050436,30.1097849760079,0.896402444709472,Zero (100% ripple-free),EXCELLENT (Pre-segmentation)
+Gaussian High-Pass (GHPF),High-Pass,50,Gaussian,2.0516938336969,16.980094134279,0.422616180642863,Zero (DC removed),DIAGNOSTIC (Boundary isolation)

@@ -1,0 +1,4 @@
+Method,PSNR_dB,SSIM,CNR,Signal_Mean,Background_Mean,Air_Noise_StdDev,Status
+Noisy Baseline,24.36,0.3372,0.72,23.67,7.11,10.29,Needs Clinical Review
+Mean Filter 5x5,30.29,0.6826,1.38,23.71,7.09,2.18,Good to Go
+Gaussian Filter 5x5 (sig=1.2),31.46,0.6848,1.27,23.71,7.11,2.68,Good to Go

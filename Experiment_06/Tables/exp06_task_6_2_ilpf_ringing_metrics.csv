@@ -1,0 +1,4 @@
+Cutoff_D0,Energy_Retention_Pct,PSNR_dB,SSIM,Ripple_P2P_Amplitude,ROI_Std_Ripple,Visual_Ringing
+20,84.04,23.36,0.635,30.0,7.94,Severe (Broad)
+40,93.85,27.51,0.7664,34.0,10.49,Moderate (Distinct)
+80,98.99,35.44,0.9439,34.0,14.62,High-Frequency Ripples

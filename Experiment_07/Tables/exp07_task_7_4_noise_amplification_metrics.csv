@@ -1,0 +1,5 @@
+Condition,Boost_k,ROI_Mean,ROI_Noise_Std,Noise_Increase_Pct,ROI_SNR_dB,PSNR_dB,SSIM,Clinical_Safety
+Clean Ground Truth,0.0,106.05,29.34,0.0,11.16,inf,1.0,Reference Scan
+Noisy (Quantum Mottle),0.0,105.69,32.75,0.0,10.18,26.08,0.5442,Baseline Low-Dose Scan
+Unsharp Masking (k=1.0),1.0,105.7,41.64,27.16,8.09,20.35,0.3511,ACCEPTABLE (Controlled Noise Boost)
+High-Boost (k=2.0),2.0,106.04,52.13,59.19,6.17,17.13,0.266,CONTRAINDICATED (>25% Noise Amplification)
