@@ -1,0 +1,4 @@
+Interpolation_Method,Evaluation_Region,PSNR_dB,SSIM,MSE,MAE,Observed_Artifact
+Nearest-Neighbor,Intracranial Parenchyma,38.69,0.9032,8.79,0.54,0th-Order Step Discontinuities (Jagged Edges)
+Bilinear,Intracranial Parenchyma,41.52,0.9067,4.58,1.23,"1st-Order Linear Weighting (Smooth, Standard)"
+Bicubic,Intracranial Parenchyma,51.64,0.9123,0.45,0.32,"3rd-Order Spline (Sharp, High-Fidelity)"

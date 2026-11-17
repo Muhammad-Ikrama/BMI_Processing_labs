@@ -1,0 +1,2 @@
+Transformation_Type,Matrix_Determinant,Identity_Deviation,Evaluated_Parenchyma_Pixels,Mean_Absolute_Error_MAE,Mean_Squared_Error_MSE,Max_Intensity_Error,Parenchyma_PSNR_dB
+"Rigid (tx=-15, ty=+12, theta=22 deg)",1.0,1.42132351745763e-14,89329,9.2213,939.3356,167.0,18.4

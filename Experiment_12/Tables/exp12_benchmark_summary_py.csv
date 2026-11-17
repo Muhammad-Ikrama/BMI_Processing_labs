@@ -1,0 +1,3 @@
+Registration_Stage,Pose_Applied,Mutual_Information_MI,Normalized_Cross_Corr_NCC,Mean_Squared_Error_MSE,Tumor_Hotspot_DSC,Tumor_Hotspot_IoU
+Unaligned Moving PET,"(+18, -14, +15.0)",0.5747,0.5479,3600.42,0.2115,0.1183
+Rigidly Registered PET,"(0.0, 0.0, 0.0)",1.8284,0.948,1754.44,0.9763,0.9537

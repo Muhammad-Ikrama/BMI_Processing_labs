@@ -1,0 +1,3 @@
+Registration_State,MRI_Lesion_Centroid_X,MRI_Lesion_Centroid_Y,PET_Hotspot_Centroid_X,PET_Hotspot_Centroid_Y,Target_Registration_Error_TRE_px,Clinical_Targeting_Status
+Unaligned Moving PET,324.06,243.87,336.34,213,33.22,Gross Geometric Offset (Beam Misses Tumor)
+Rigidly Registered PET,324.06,243.87,323.66,244.13,0.48,Sub-Pixel Clinical Precision (TRE <= 1.0 px)
