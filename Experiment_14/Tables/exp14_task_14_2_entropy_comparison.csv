@@ -1,0 +1,4 @@
+Modality,Dimensions,Raw_Bytes,Shannon_Entropy_bpp,Max_First_Order_CR,PNG_Lossless_Bytes,PNG_Compression_Ratio,PNG_Space_Saving_Pct
+Brain MRI,512x512,262144,6.059,1.32,123540,2.12,52.9
+Head CT,512x512,262144,7.736,1.03,144139,1.82,45.0
+Chest X-Ray,466x429,199914,6.068,1.32,81327,2.46,59.3

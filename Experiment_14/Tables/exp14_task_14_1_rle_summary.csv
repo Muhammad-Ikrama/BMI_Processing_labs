@@ -1,0 +1,3 @@
+Input_Type,Raw_Bytes,Total_Runs,RLE_Compressed_Bytes,Compression_Ratio,Space_Saving_Pct,MSE,Reconstruction_Status
+Binary Otsu Mask (High Redundancy),262144,5679,17037,15.39,93.5,0.0,BIT-EXACT (PASS)
+Raw 8-bit Grayscale MRI (Noisy Pixels),262144,177530,532590,0.49,-103.2,0.0,BIT-EXACT (PASS)

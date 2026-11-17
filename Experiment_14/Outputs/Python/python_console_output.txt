@@ -1,0 +1,99 @@
+********************************************************************************
+   RIPHAH INTERNATIONAL UNIVERSITY - FACULTY OF ENGINEERING & APPLIED SCIENCES
+   DEPARTMENT OF BIOMEDICAL ENGINEERING - MEDICAL IMAGE PROCESSING LAB (BMI-701)
+   EXPERIMENT 14: LOSSLESS & LOSSY MEDICAL IMAGE COMPRESSION (PSNR & CR)
+   Student: Muhammad Ikrama (Reg ID: 60140) | Instructor: Engr. Rana Talha Khalid
+********************************************************************************
+
+>>> Running Section 5 Clinical Compression Benchmark...
+================================================================================
+EXPERIMENT 14: MEDICAL IMAGE COMPRESSION BENCHMARK
+================================================================================
+Uncompressed Raw Size: 262144 bytes (8.00 BPP) | Shannon Entropy H = 6.059 BPP
+
+Compression Method        | Bytes   | CR     | Saved % | BPP   | MSE    | PSNR (dB) | SSIM
+--------------------------------------------------------------------------------------------
+Lossless PNG (Deflate L9) | 123540  | 2.12 x | 52.9  % | 3.77  | 0.00   | INF       | 1.0000
+Lossy JPEG (Q=95)         | 67416   | 3.89 x | 74.3  % | 2.06  | 0.72   | 49.55     | 0.9965
+Lossy JPEG (Q=85)         | 38468   | 6.81 x | 85.3  % | 1.17  | 2.27   | 44.57     | 0.9912
+Lossy JPEG (Q=50)         | 21253   | 12.33x | 91.9  % | 0.65  | 8.02   | 39.09     | 0.9743
+Lossy JPEG (Q=25)         | 14652   | 17.89x | 94.4  % | 0.45  | 17.28  | 35.75     | 0.9504
+Lossy JPEG (Q=10)         | 8898    | 29.46x | 96.6  % | 0.27  | 53.35  | 30.86     | 0.8687
+Lossy JPEG (Q=5)          | 6275    | 41.78x | 97.6  % | 0.19  | 112.64 | 27.61     | 0.8017
+
+>>> Status: Lossless PNG guarantees 0 MSE; JPEG Q=85 achieves high diagnostic fidelity.
+>>> Benchmark figures generated.
+
+>>> Running Task 14.1: Custom RLE Compressor...
+================================================================================
+TASK 14.1: CUSTOM RUN-LENGTH ENCODING (RLE) COMPRESSOR
+================================================================================
+Input Target                           | Raw Bytes  | Runs    | RLE Bytes  | CR     | MSE    | Status
+----------------------------------------------------------------------------------------
+Binary Otsu Mask (High Redundancy)     | 262144     | 5679    | 17037      | 15.39x | 0.0000 | BIT-EXACT (PASS)
+Raw 8-bit Grayscale MRI (Noisy Pixels) | 262144     | 177530  | 532590     | 0.49 x | 0.0000 | BIT-EXACT (PASS)
+>>> Task 14.1 Complete. RLE figures and CSV exported.
+
+>>> Running Task 14.2: Shannon Entropy & Redundancy Across Modalities...
+================================================================================
+TASK 14.2: SHANNON ENTROPY & REDUNDANCY COMPARISON ACROSS MODALITIES
+================================================================================
+Medical Modality | Dimensions   | Raw Bytes  | Entropy H    | Max 1st-Order CR  | PNG Bytes  | PNG CR
+--------------------------------------------------------------------------------------------
+Brain MRI        | 512x512      | 262144     | 6.059        | 1.32             x | 123540     | 2.12x
+Head CT          | 512x512      | 262144     | 7.736        | 1.03             x | 144139     | 1.82x
+Chest X-Ray      | 466x429      | 199914     | 6.068        | 1.32             x | 81327      | 2.46x
+>>> Task 14.2 Complete. Histograms and CSV exported.
+
+>>> Running Task 14.3: Multi-Modality Rate-Distortion Curves...
+================================================================================
+TASK 14.3: MULTI-MODALITY RATE-DISTORTION CURVE BENCHMARKING
+================================================================================
+Modality       | Q Factor  | CR     | MSE     | PSNR (dB)  | SSIM
+--------------------------------------------------------------
+Brain MRI      | 95        | 3.89 x | 0.72    | 49.55      | 0.9965
+Brain MRI      | 85        | 6.81 x | 2.27    | 44.57      | 0.9912
+Brain MRI      | 70        | 9.53 x | 4.64    | 41.47      | 0.9841
+Brain MRI      | 50        | 12.33x | 8.02    | 39.09      | 0.9743
+Brain MRI      | 30        | 16.12x | 14.51   | 36.51      | 0.9555
+Brain MRI      | 15        | 23.50x | 32.75   | 32.98      | 0.9090
+Brain MRI      | 5         | 41.78x | 112.64  | 27.61      | 0.8017
+Chest X-Ray    | 95        | 3.45 x | 0.04    | 62.56      | 0.9998
+Chest X-Ray    | 85        | 5.71 x | 5.69    | 40.58      | 0.9841
+Chest X-Ray    | 70        | 7.88 x | 15.03   | 36.36      | 0.9688
+Chest X-Ray    | 50        | 10.29x | 29.49   | 33.43      | 0.9553
+Chest X-Ray    | 30        | 13.71x | 55.39   | 30.70      | 0.9367
+Chest X-Ray    | 15        | 20.43x | 112.30  | 27.63      | 0.8957
+Chest X-Ray    | 5         | 34.74x | 240.37  | 24.32      | 0.7921
+>>> Task 14.3 Complete. Rate-distortion curves exported.
+
+>>> Running Task 14.4: 8x8 DCT Blocking Artifact Visualization...
+================================================================================
+TASK 14.4: 8x8 DCT BLOCKING ARTIFACT & RESIDUAL ERROR MAP VISUALIZATION
+================================================================================
+JPEG Quality   | Mean Absolute Err  | Max Absolute Err   | Root MSE    
+--------------------------------------------------------------------
+JPEG Q=85       | 0.989              | 13.00              | 1.507       
+JPEG Q=25       | 2.659              | 37.00              | 4.157       
+JPEG Q=5        | 7.645              | 91.00              | 10.613      
+>>> Task 14.4 Complete. Artifact maps and error statistics exported.
+
+>>> Running Task 14.5: Downstream Impact on Segmentation & GLCM...
+================================================================================
+TASK 14.5: IMPACT OF LOSSY COMPRESSION ON DOWNSTREAM SEGMENTATION & GLCM
+================================================================================
+JPEG Quality   | Tumor Dice (DSC)   | GLCM Contrast   | Con. Error %   | GLCM Entropy   | Ent. Error %
+--------------------------------------------------------------------------------------------
+Uncompressed (100) | 1.0000             | 4.2226          | 0.0           % | 5.7556         | 0.0%
+Lossy (Q=95)   | 0.9947             | 4.2493          | 0.6           % | 5.7782         | 0.4%
+Lossy (Q=85)   | 0.9761             | 4.2987          | 1.8           % | 5.8332         | 1.3%
+Lossy (Q=50)   | 0.7974             | 4.0018          | 5.2           % | 5.8902         | 2.3%
+Lossy (Q=25)   | 0.9560             | 3.3611          | 20.4          % | 5.8881         | 2.3%
+Lossy (Q=10)   | 0.9222             | 3.4541          | 18.2          % | 5.8918         | 2.4%
+Lossy (Q=5)    | 0.0253             | 3.1941          | 24.4          % | 5.8547         | 1.7%
+>>> Task 14.5 Complete. Downstream impact figures and CSV exported.
+
+================================================================================
+EXPERIMENT 14 COMPLETE: All 5 Tasks & Benchmark Successfully Executed in 19.27s.
+All figures saved to Figures/ and all tables exported to Tables/.
+================================================================================

@@ -1,0 +1,8 @@
+Quality_Setting,Quality_Q,Tumor_Dice_DSC,GLCM_Contrast,Contrast_Error_Pct,GLCM_Entropy_bits,Entropy_Error_Pct
+Uncompressed (100),100,1.0,4.2226,0.0,5.7556,0.0
+Lossy (Q=95),95,0.9947,4.2493,0.63,5.7782,0.39
+Lossy (Q=85),85,0.9761,4.2987,1.8,5.8332,1.35
+Lossy (Q=50),50,0.7974,4.0018,5.23,5.8902,2.34
+Lossy (Q=25),25,0.956,3.3611,20.4,5.8881,2.3
+Lossy (Q=10),10,0.9222,3.4541,18.2,5.8918,2.37
+Lossy (Q=5),5,0.0253,3.1941,24.36,5.8547,1.72

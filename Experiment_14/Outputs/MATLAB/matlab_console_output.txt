@@ -1,0 +1,96 @@
+[Warning: Unable to locate a personal folder for $documents\MATLAB.] 
+
+	Course Support License -- for instructional use for courses.  Not for government, 
+	research, commercial, or other organizational use.
+
+********************************************************************************
+   RIPHAH INTERNATIONAL UNIVERSITY - FACULTY OF ENGINEERING & APPLIED SCIENCES
+   DEPARTMENT OF BIOMEDICAL ENGINEERING - MEDICAL IMAGE PROCESSING LAB (BMI-701)
+   EXPERIMENT 14: LOSSLESS & LOSSY MEDICAL IMAGE COMPRESSION (PSNR & CR)
+   Student: Muhammad Ikrama (Reg ID: 60140) | Instructor: Engr. Rana Talha Khalid
+********************************************************************************
+
+>>> Running Section 5 Clinical Compression Benchmark in MATLAB...
+Method                    | Bytes   | CR     | Saved % | PSNR (dB) | SSIM  
+--------------------------------------------------------------------------
+Lossless PNG (Deflate)    | 120817  | 2.17 x | 53.9  % | Inf       | 1.0000
+Lossy JPEG (Q=95)         | 67416   | 3.89 x | 74.3  % | 49.55     | 0.9965
+Lossy JPEG (Q=85)         | 38468   | 6.81 x | 85.3  % | 44.57     | 0.9912
+Lossy JPEG (Q=50)         | 21253   | 12.33x | 91.9  % | 39.09     | 0.9743
+Lossy JPEG (Q=25)         | 14652   | 17.89x | 94.4  % | 35.75     | 0.9504
+Lossy JPEG (Q=10)         | 8898    | 29.46x | 96.6  % | 30.86     | 0.8687
+Lossy JPEG (Q=5 )         | 6275    | 41.78x | 97.6  % | 27.61     | 0.8017
+>>> Status: Rate-distortion trade-off verified across lossless and lossy codecs.
+
+>>> Running Task 14.1: Custom RLE Compressor...
+================================================================================
+TASK 14.1: CUSTOM RUN-LENGTH ENCODING (RLE) COMPRESSOR (MATLAB)
+================================================================================
+Input Target                           | Raw Bytes  | Runs    | RLE Bytes  | CR     | MSE   
+----------------------------------------------------------------------------------------
+Binary Otsu Mask (High Redundancy)     | 262144     | 4445    | 13335      | 19.66x | 0.0000
+Raw 8-bit Grayscale MRI (Noisy Pixels) | 262144     | 176492  | 529476     | 0.50 x | 0.0000
+>>> Task 14.1 Complete: Bit-exact verification verified (MSE = 0.0000).
+
+>>> Running Task 14.2: Shannon Entropy & Redundancy Across Modalities...
+================================================================================
+TASK 14.2: SHANNON ENTROPY & REDUNDANCY COMPARISON (MATLAB)
+================================================================================
+Medical Modality | Dimensions   | Raw Bytes  | Entropy H    | Max 1st-Order CR  | PNG Bytes  | PNG CR 
+--------------------------------------------------------------------------------------------
+Brain MRI        | 512x512      | 262144     | 6.059        | 1.32             x | 120817     | 2.17x
+Head CT          | 512x512      | 262144     | 7.736        | 1.03             x | 131583     | 1.99x
+Chest X-Ray      | 466x429      | 199914     | 6.068        | 1.32             x | 76148      | 2.63x
+>>> Task 14.2 Shannon Entropy Evaluation Complete.
+
+>>> Running Task 14.3: Multi-Modality Rate-Distortion Curves...
+================================================================================
+TASK 14.3: MULTI-MODALITY RATE-DISTORTION CURVE BENCHMARKING (MATLAB)
+================================================================================
+Modality       | Q Factor  | CR     | MSE     | PSNR (dB)  | SSIM  
+--------------------------------------------------------------
+Brain MRI      | 95        | 3.89 x | 0.72    | 49.55      | 0.9965
+Brain MRI      | 85        | 6.81 x | 2.27    | 44.57      | 0.9912
+Brain MRI      | 70        | 9.53 x | 4.64    | 41.47      | 0.9841
+Brain MRI      | 50        | 12.33x | 8.02    | 39.09      | 0.9743
+Brain MRI      | 30        | 16.12x | 14.51   | 36.51      | 0.9555
+Brain MRI      | 15        | 23.50x | 32.75   | 32.98      | 0.9090
+Brain MRI      | 5         | 41.78x | 112.64  | 27.61      | 0.8017
+Chest X-Ray    | 95        | 3.45 x | 0.04    | 62.56      | 0.9998
+Chest X-Ray    | 85        | 5.71 x | 5.69    | 40.58      | 0.9841
+Chest X-Ray    | 70        | 7.88 x | 15.03   | 36.36      | 0.9688
+Chest X-Ray    | 50        | 10.29x | 29.49   | 33.43      | 0.9552
+Chest X-Ray    | 30        | 13.71x | 55.39   | 30.70      | 0.9366
+Chest X-Ray    | 15        | 20.43x | 112.30  | 27.63      | 0.8956
+Chest X-Ray    | 5         | 34.74x | 240.37  | 24.32      | 0.7921
+>>> Task 14.3 Multi-Modality RD Evaluation Complete.
+
+>>> Running Task 14.4: 8x8 DCT Blocking Artifact Visualization...
+================================================================================
+TASK 14.4: 8x8 DCT BLOCKING ARTIFACT VISUALIZATION (MATLAB)
+================================================================================
+JPEG Quality   | Mean Absolute Err  | Max Absolute Err   | Root MSE    
+--------------------------------------------------------------------
+JPEG Q=85       | 0.989              | 13.00              | 1.507       
+JPEG Q=25       | 2.659              | 37.00              | 4.157       
+JPEG Q=5        | 7.645              | 91.00              | 10.613      
+>>> Task 14.4 Artifact Evaluation Complete.
+
+>>> Running Task 14.5: Downstream Impact on Segmentation & GLCM...
+================================================================================
+TASK 14.5: DOWNSTREAM IMPACT ON SEGMENTATION & GLCM (MATLAB)
+================================================================================
+JPEG Quality   | Tumor Dice (DSC)   | GLCM Contrast   | Con. Error %  
+----------------------------------------------------------------------
+Uncompressed   | 1.0000             | 4.5557          | 0.0          %
+Q=95           | 0.9572             | 4.6239          | 1.5          %
+Q=85           | 0.9509             | 4.6204          | 1.4          %
+Q=50           | 0.8459             | 4.5221          | 0.7          %
+Q=25           | 0.8416             | 3.4565          | 24.1         %
+Q=10           | 0.6721             | 3.1425          | 31.0         %
+Q=5            | 0.7674             | 3.5452          | 22.2         %
+>>> Task 14.5 Downstream Evaluation Complete.
+
+================================================================================
+EXPERIMENT 14 MATLAB RUN COMPLETE in 7.77 seconds.
+================================================================================
