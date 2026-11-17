@@ -1,0 +1,3 @@
+Model_Type,Formulation,Area_px,Ground_Truth_px,DSC,Jaccard_IoU,Noise_Robustness
+Edge-Based Snake,Local Gradient Magnitude ||del I||^2,4677,1772,0.5495,0.3789,Poor (Trapped in Local Noise Minima)
+Chan-Vese Region Model,"Global Mean Intensity Variance (c1, c2)",3397,1772,0.6856,0.5216,Superior (Integral Averages Out Thermal Noise)

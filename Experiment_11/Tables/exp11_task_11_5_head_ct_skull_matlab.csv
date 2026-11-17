@@ -1,0 +1,4 @@
+Iteration,Enclosed_Area_px,Perimeter_px,Circularity,Status
+Iter 30,179760,1514.3,0.9851,Contracting
+Iter 60,183901,1544.8,0.9684,Contracting
+Iter 100,187153,1569.9,0.9543,Locked on Outer Skull

@@ -1,0 +1,6 @@
+Configuration,r0_px,sigma,Final_DSC,Final_IoU,Status
+r0=28 px (Interior),28,12,0.9802,0.9611,Optimal Convergence
+r0=38 px (Optimal Baseline),38,12,0.9808,0.9622,Optimal Convergence
+r0=52 px (Extended Margin),52,12,0.9869,0.9741,Optimal Convergence
+r0=70 px (Outside Capture sigma=12),70,12,0.2133,0.1194,Stalled Outside Capture Range
+r0=70 px (Expanded sigma=24),70,24,0.6086,0.4374,Partial Capture

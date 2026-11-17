@@ -1,0 +1,4 @@
+Regime_Name,Alpha,Beta,DSC,Jaccard_IoU,Segmented_Area,Ground_Truth_Area,Area_Ratio,E_total,Status
+High Tension,0.8,0.05,0.9702,0.9421,1685,1772,0.9509,-98.62,Inward Over-Shrinkage
+High Stiffness,0.05,2.5,0.9757,0.9525,1803,1772,1.0175,-99.86,Rigid Circle (No Conformal Bending)
+Balanced Clinical Tuning,0.06,0.12,0.9738,0.9489,1816,1772,1.0248,-99.88,Optimal Boundary Lock

@@ -1,0 +1,3 @@
+Method,Segmented_Area,Ground_Truth_Area,DSC,Jaccard_IoU,Clinical_Outcome
+"Seeded Region Growing (T=38)",1394,1774,0.8611,0.7561,Catastrophic Boundary Leakage via Gap
+"Active Contour (Snake, beta=0.25)",4973,1774,0.5247,0.3556,Smooth Curvature Bridging (Gap Sealed)

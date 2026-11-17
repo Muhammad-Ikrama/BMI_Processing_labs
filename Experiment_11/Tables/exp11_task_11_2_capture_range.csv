@@ -1,0 +1,6 @@
+Configuration,Initial_Radius_r0,Sigma_Capture,DSC,Jaccard_IoU,Final_Area_px,Ground_Truth_px,Status
+r0=28 px (Interior),28,12.0,0.98,0.9607,1773,1772,Optimal Convergence
+r0=38 px (Optimal Baseline),38,12.0,0.9769,0.9548,1772,1772,Optimal Convergence
+r0=52 px (Extended Margin),52,12.0,0.9759,0.9529,1796,1772,Optimal Convergence
+r0=70 px (Outside Capture sigma=12),70,12.0,0.2106,0.1177,15058,1772,Stalled Outside Capture Range
+r0=70 px (Expanded sigma=24),70,24.0,0.5975,0.4261,4159,1772,Partial Capture

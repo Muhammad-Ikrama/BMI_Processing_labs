@@ -1,0 +1,4 @@
+Iteration,Enclosed_Area_px,Perimeter_px,Circularity,Head_Field_Percentage,Status
+30,174227,1570.35,0.8878,66.46,Contracting
+60,173415,1572.86,0.8809,66.15,Contracting
+100,169418,1588.58,0.8436,64.63,Locked on Outer Skull
