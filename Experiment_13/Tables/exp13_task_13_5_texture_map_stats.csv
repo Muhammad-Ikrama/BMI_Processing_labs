@@ -1,0 +1,4 @@
+Feature_Map,Min,Max,Mean,Std
+GLCM Contrast,0.0,6.6688,0.78,1.0118
+Shannon Entropy (bits),-0.0,6.4602,2.4932,2.0405
+GLCM Homogeneity,0.4243,1.0,0.8404,0.145

@@ -1,0 +1,6 @@
+Ng_Levels,Matrix_Dimension,Total_Cells,Exec_Time_ms,Sparsity_Percent,Contrast_Normal,Contrast_Tumor,Tumor_to_Normal_Ratio
+8,8x8,64,3.725,53.1,0.1935,1.0731,5.54
+16,16x16,256,3.585,63.3,0.4903,4.2226,8.61
+32,32x32,1024,3.438,75.4,1.5219,16.967,11.15
+64,64x64,4096,3.34,85.8,5.5685,68.5042,12.3
+256,256x256,65536,7.451,95.5,86.9039,1106.045,12.73

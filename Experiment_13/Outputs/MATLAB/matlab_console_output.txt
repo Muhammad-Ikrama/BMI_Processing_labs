@@ -1,0 +1,114 @@
+[Warning: Unable to locate a personal folder for $documents\MATLAB.] 
+
+	Course Support License -- for instructional use for courses.  Not for government, 
+	research, commercial, or other organizational use.
+
+********************************************************************************
+   RIPHAH INTERNATIONAL UNIVERSITY - FACULTY OF ENGINEERING & APPLIED SCIENCES
+   DEPARTMENT OF BIOMEDICAL ENGINEERING - MEDICAL IMAGE PROCESSING LAB (BMI-701)
+   EXPERIMENT 13: TEXTURE FEATURE EXTRACTION FROM MEDICAL IMAGES USING GLCM
+   Student: Muhammad Ikrama (Reg ID: 60140) | Instructor: Engr. Rana Talha Khalid
+********************************************************************************
+
+>>> Running Section 5 Clinical Benchmark Extraction in MATLAB...
+Clinical Tissue ROI       | Contrast  | Homogen.  | Energy   | Entropy  | Correl.
+-------------------------------------------------------------------------------
+Normal White Matter ROI   | 0.490     | 0.831     | 0.1530   | 3.416    | 0.836  
+Cortical Folding ROI      | 0.392     | 0.864     | 0.1543   | 3.320    | 0.868  
+Heterogeneous Tumor ROI   | 4.556     | 0.651     | 0.0415   | 5.832    | 0.802  
+>>> Status: Haralick second-order statistics differentiate pathological heterogeneity.
+
+>>> Running Task 13.1: Hand-Verified 4x4 GLCM Construction...
+================================================================================
+TASK 13.1: HAND-VERIFIED 4x4 GLCM CONSTRUCTION & NORMALIZATION (MATLAB)
+================================================================================
+
+1. Synthetic 4x4 Input Image (Ng = 4):
+     0     0     1     1
+     0     0     1     1
+     0     2     2     2
+     2     2     3     3
+
+2. Raw Horizontal Count Matrix C (d=1, theta=0 deg, Non-Symmetric, Sum = 12):
+     2     2     1     0
+     0     2     0     0
+     0     0     3     1
+     0     0     0     1
+
+3. Symmetric Count Matrix C_sym = C + C' (Sum = 24):
+     4     2     1     0
+     2     4     0     0
+     1     0     6     1
+     0     0     1     2
+
+4. Normalized Probability Matrix P(i,j) (Sum = 1.000000):
+    0.1667    0.0833    0.0417         0
+    0.0833    0.1667         0         0
+    0.0417         0    0.2500    0.0417
+         0         0    0.0417    0.0833
+
+Haralick Features:
+  Contrast: 0.5833
+  Homogeneity: 0.8194
+  Energy: 0.1458
+  Entropy: 3.0221 bits
+>>> Task 13.1 Verification Passed: Probability Matrix sums to 1.000000.
+
+>>> Running Task 13.2: Distance Sensitivity Sweep...
+================================================================================
+TASK 13.2: INTER-PIXEL DISTANCE (d) SENSITIVITY SWEEP (MATLAB)
+================================================================================
+d (px) | ROI Type   | Contrast  | Homogen.  | Energy   | Correl.
+-------------------------------------------------------------------
+1      | Normal     | 0.490     | 0.831     | 0.1530   | 0.836  
+1      | Tumor      | 4.556     | 0.651     | 0.0415   | 0.802  
+2      | Normal     | 1.053     | 0.736     | 0.1102   | 0.641  
+2      | Tumor      | 8.852     | 0.496     | 0.0257   | 0.601  
+4      | Normal     | 1.743     | 0.659     | 0.0879   | 0.404  
+4      | Tumor      | 14.070    | 0.405     | 0.0202   | 0.334  
+8      | Normal     | 2.486     | 0.600     | 0.0753   | 0.147  
+8      | Tumor      | 17.624    | 0.376     | 0.0186   | 0.112  
+12     | Normal     | 2.826     | 0.568     | 0.0765   | -0.006 
+12     | Tumor      | 18.978    | 0.362     | 0.0186   | 0.055  
+>>> Task 13.2 Sweep Complete.
+
+>>> Running Task 13.3: Directional Anisotropy Analysis...
+================================================================================
+TASK 13.3: DIRECTIONAL ANISOTROPY ANALYSIS ON CHEST X-RAY (MATLAB)
+================================================================================
+Anatomical ROI                         | Angle    | Contrast  | Homogen.  | Correl. 
+---------------------------------------------------------------------------
+Posterior Ribs ROI (Directional Bone)  | 0 deg    | 0.0479    | 0.9761    | 0.9908  
+Posterior Ribs ROI (Directional Bone)  | 90 deg   | 0.5171    | 0.9475    | 0.8876  
+  --> Directional Anisotropy Ratio (C90 / C0): 10.80x
+
+Lung Parenchyma ROI (Isotropic Tissue) | 0 deg    | 1.0806    | 0.9713    | 0.9619  
+Lung Parenchyma ROI (Isotropic Tissue) | 90 deg   | 0.7731    | 0.9537    | 0.9735  
+  --> Directional Anisotropy Ratio (C90 / C0): 0.72x
+>>> Task 13.3 Analysis Complete.
+
+>>> Running Task 13.4: Gray-Level Quantization Trade-Off...
+================================================================================
+TASK 13.4: GRAY-LEVEL QUANTIZATION (Ng) TRADE-OFF EVALUATION (MATLAB)
+================================================================================
+Ng Levels  | Matrix Size  | Time (ms)  | Sparsity (%)  | C_Norm    | C_Tumor   | Ratio  
+--------------------------------------------------------------------------------
+8          | 8x8          | 3.311      | 61.3          | 0.194     | 1.159     | 5.99x
+16         | 16x16        | 2.132      | 75.4          | 0.490     | 4.556     | 9.29x
+32         | 32x32        | 3.671      | 85.0          | 1.522     | 18.398    | 12.09x
+64         | 64x64        | 4.802      | 91.8          | 5.569     | 74.333    | 13.35x
+256        | 256x256      | 10.076     | 97.5          | 86.904    | 1199.658  | 13.80x
+>>> Task 13.4 Trade-Off Evaluation Complete.
+
+>>> Running Task 13.5: Sliding-Window Texture Feature Maps...
+================================================================================
+TASK 13.5: SLIDING-WINDOW LOCAL TEXTURE FEATURE MAP GENERATION (MATLAB)
+================================================================================
+Generated 2D Texture Maps (63x63 grid) in 6.06 seconds.
+  Contrast Map: min = 0.000, max = 7.283, mean = 0.784
+  Entropy Map:  min = -0.000, max = 6.460, mean = 2.495
+>>> Task 13.5 Complete.
+
+================================================================================
+EXPERIMENT 13 MATLAB RUN COMPLETE in 11.75 seconds.
+================================================================================

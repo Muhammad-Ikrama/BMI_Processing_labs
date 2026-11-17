@@ -1,0 +1,11 @@
+Distance_d,ROI,Contrast,Homogeneity,Energy,Entropy_bits,Correlation
+1,Normal_White_Matter,0.4903,0.8281,0.1522,3.4353,0.8362
+1,Heterogeneous_Tumor,4.2226,0.6211,0.0485,5.7556,0.8309
+2,Normal_White_Matter,1.0526,0.7245,0.1092,3.8668,0.6419
+2,Heterogeneous_Tumor,8.5369,0.4364,0.0296,6.2543,0.6458
+4,Normal_White_Matter,1.7426,0.635,0.0869,4.1566,0.4035
+4,Heterogeneous_Tumor,14.3611,0.3269,0.023,6.3938,0.3674
+8,Normal_White_Matter,2.4859,0.5635,0.0741,4.3574,0.1483
+8,Heterogeneous_Tumor,19.1622,0.2963,0.0208,6.4208,0.0951
+12,Normal_White_Matter,2.8264,0.526,0.0742,4.3361,-0.0004
+12,Heterogeneous_Tumor,20.6596,0.2954,0.0192,6.4696,0.0004

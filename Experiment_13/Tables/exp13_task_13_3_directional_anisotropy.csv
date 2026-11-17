@@ -1,0 +1,5 @@
+Anatomical_ROI,Angle_deg,Direction,Contrast,Homogeneity,Energy,Entropy_bits,Correlation,Anisotropy_Ratio_C90_over_C0
+Posterior Ribs ROI (Directional Bone),0,Horizontal,0.0479,0.9761,0.3789,2.0533,0.9908,10.8
+Posterior Ribs ROI (Directional Bone),90,Vertical,0.5171,0.9442,0.3777,2.1591,0.8876,10.8
+Lung Parenchyma ROI (Isotropic Tissue),0,Horizontal,1.0806,0.9698,0.5996,1.7051,0.9619,0.72
+Lung Parenchyma ROI (Isotropic Tissue),90,Vertical,0.7731,0.951,0.5978,1.7574,0.9735,0.72

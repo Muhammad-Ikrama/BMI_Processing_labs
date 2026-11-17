@@ -1,0 +1,118 @@
+********************************************************************************
+   RIPHAH INTERNATIONAL UNIVERSITY - FACULTY OF ENGINEERING & APPLIED SCIENCES
+   DEPARTMENT OF BIOMEDICAL ENGINEERING - MEDICAL IMAGE PROCESSING LAB (BMI-701)
+   EXPERIMENT 13: TEXTURE FEATURE EXTRACTION FROM MEDICAL IMAGES USING GLCM
+   Student: Muhammad Ikrama (Reg ID: 60140) | Instructor: Engr. Rana Talha Khalid
+********************************************************************************
+
+>>> Running Section 5 Clinical Benchmark Extraction...
+================================================================================
+EXPERIMENT 13: GLCM TEXTURE FEATURE EXTRACTION BENCHMARK
+================================================================================
+Clinical Tissue ROI       | Contrast  | Homogen.  | Energy   | Entropy  | Correl.
+-------------------------------------------------------------------------------
+Normal White Matter ROI   | 0.490     | 0.828     | 0.1522   | 3.435    | 0.836  
+Cortical Folding ROI      | 0.392     | 0.862     | 0.1537   | 3.338    | 0.868  
+Heterogeneous Tumor ROI   | 4.223     | 0.621     | 0.0485   | 5.756    | 0.831  
+>>> Status: GLCM Contrast (8.6x increase) robustly separates Tumor ROI.
+
+>>> Running Task 13.1: Hand-Verified 4x4 GLCM Construction...
+================================================================================
+TASK 13.1: HAND-VERIFIED 4x4 GLCM CONSTRUCTION & NORMALIZATION
+================================================================================
+
+1. Synthetic 4x4 Input Image (Ng = 4):
+[[0 0 1 1]
+ [0 0 1 1]
+ [0 2 2 2]
+ [2 2 3 3]]
+
+2. Raw Horizontal Count Matrix C (d=1, theta=0 deg, Non-Symmetric, Sum = 12):
+[[2 2 1 0]
+ [0 2 0 0]
+ [0 0 3 1]
+ [0 0 0 1]]
+
+3. Symmetric Count Matrix C_sym = C + C^T (Sum = 24):
+[[4 2 1 0]
+ [2 4 0 0]
+ [1 0 6 1]
+ [0 0 1 2]]
+
+4. Normalized Probability Matrix P(i,j) (Sum = 1.0000):
+[[0.1667 0.0833 0.0417 0.    ]
+ [0.0833 0.1667 0.     0.    ]
+ [0.0417 0.     0.25   0.0417]
+ [0.     0.     0.0417 0.0833]]
+
+Verification Assertions:
+  Total Raw Pairs: 12 (Expected: 12)
+  Total Symmetric Pairs: 24 (Expected: 24)
+  Probability Sum: 1.000000 (Expected: 1.000000)
+  Contrast: 0.5833
+  Homogeneity: 0.8083
+  Energy (ASM): 0.1458
+  Entropy: 3.0221 bits
+>>> Task 13.1 Complete. Figures and tables generated.
+
+>>> Running Task 13.2: Distance Sensitivity Sweep...
+================================================================================
+TASK 13.2: INTER-PIXEL DISTANCE (d) SENSITIVITY SWEEP ON BRAIN MRI
+================================================================================
+d (px) | ROI Type   | Contrast  | Homogen.  | Energy   | Entropy  | Correl.
+---------------------------------------------------------------------------
+1      | Normal     | 0.490     | 0.828     | 0.1522   | 3.435    | 0.836  
+1      | Tumor      | 4.223     | 0.621     | 0.0485   | 5.756    | 0.831  
+2      | Normal     | 1.053     | 0.725     | 0.1092   | 3.867    | 0.642  
+2      | Tumor      | 8.537     | 0.436     | 0.0296   | 6.254    | 0.646  
+4      | Normal     | 1.743     | 0.635     | 0.0869   | 4.157    | 0.403  
+4      | Tumor      | 14.361    | 0.327     | 0.0230   | 6.394    | 0.367  
+8      | Normal     | 2.486     | 0.563     | 0.0741   | 4.357    | 0.148  
+8      | Tumor      | 19.162    | 0.296     | 0.0208   | 6.421    | 0.095  
+12     | Normal     | 2.826     | 0.526     | 0.0742   | 4.336    | -0.000 
+12     | Tumor      | 20.660    | 0.295     | 0.0192   | 6.470    | 0.000  
+>>> Task 13.2 Complete. Plots and CSV exported.
+
+>>> Running Task 13.3: Directional Anisotropy Analysis...
+================================================================================
+TASK 13.3: DIRECTIONAL ANISOTROPY ANALYSIS ON CHEST X-RAY
+================================================================================
+Anatomical ROI                         | Angle    | Contrast  | Homogen.  | Correl. 
+---------------------------------------------------------------------------
+Posterior Ribs ROI (Directional Bone)  | 0 deg    | 0.0479    | 0.9761    | 0.9908  
+Posterior Ribs ROI (Directional Bone)  | 90 deg   | 0.5171    | 0.9442    | 0.8876  
+  --> Directional Anisotropy Ratio (C90 / C0): 10.80x
+
+Lung Parenchyma ROI (Isotropic Tissue) | 0 deg    | 1.0806    | 0.9698    | 0.9619  
+Lung Parenchyma ROI (Isotropic Tissue) | 90 deg   | 0.7731    | 0.9510    | 0.9735  
+  --> Directional Anisotropy Ratio (C90 / C0): 0.72x
+
+>>> Task 13.3 Complete. Anisotropy figures and CSV exported.
+
+>>> Running Task 13.4: Gray-Level Quantization Trade-Off...
+================================================================================
+TASK 13.4: GRAY-LEVEL QUANTIZATION (Ng) TRADE-OFF EVALUATION
+================================================================================
+Ng Levels  | Matrix Size  | Time (ms)  | Sparsity (%)  | C_Norm    | C_Tumor   | Ratio
+--------------------------------------------------------------------------------
+8          | 8x8          | 3.725      | 53.1          | 0.194     | 1.073     | 5.54x
+16         | 16x16        | 3.585      | 63.3          | 0.490     | 4.223     | 8.61x
+32         | 32x32        | 3.438      | 75.4          | 1.522     | 16.967    | 11.15x
+64         | 64x64        | 3.340      | 85.8          | 5.569     | 68.504    | 12.30x
+256        | 256x256      | 7.451      | 95.5          | 86.904    | 1106.045  | 12.73x
+>>> Task 13.4 Complete. Quantization trade-off figures and CSV exported.
+
+>>> Running Task 13.5: Sliding-Window Texture Feature Maps...
+================================================================================
+TASK 13.5: SLIDING-WINDOW LOCAL TEXTURE FEATURE MAP GENERATION
+================================================================================
+Generated 2D Texture Maps (63x63 grid) in 1.80 seconds.
+  Contrast Map: min = 0.000, max = 6.669, mean = 0.780
+  Entropy Map: min = -0.000, max = 6.460, mean = 2.493
+  Homogeneity Map: min = 0.424, max = 1.000, mean = 0.840
+>>> Task 13.5 Complete. Parametric maps exported.
+
+================================================================================
+EXPERIMENT 13 COMPLETE: All 5 Tasks & Benchmark Successfully Executed in 31.81s.
+All figures saved to Figures/ and all tables exported to Tables/.
+================================================================================

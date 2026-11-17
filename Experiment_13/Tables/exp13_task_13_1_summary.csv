@@ -1,0 +1,6 @@
+Metric,Value,Status
+Sum of Probabilities,1.0,PASS
+GLCM Contrast,0.5833,VERIFIED
+GLCM Homogeneity,0.8083,VERIFIED
+GLCM Energy,0.1458,VERIFIED
+GLCM Entropy,3.0221,VERIFIED
